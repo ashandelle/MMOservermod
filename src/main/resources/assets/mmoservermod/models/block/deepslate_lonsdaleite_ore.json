@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mmoservermod:blocks/deepslate_lonsdaleite_ore",
+    "particle": "mmoservermod:blocks/deepslate_lonsdaleite_ore"
+  }
+}

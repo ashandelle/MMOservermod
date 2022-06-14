@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "1": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "2": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "3": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "4": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "5": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "6": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "7": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "8": {
+      "item": "mmoservermod:lonsdaleite"
+    }
+  },
+  "result": {
+    "item": "mmoservermod:lonsdaleite_block",
+    "count": 1
+  }
+}

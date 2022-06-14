@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "mmoservermod:raw_mithril"
+    },
+    "1": {
+      "item": "mmoservermod:raw_mithril"
+    },
+    "2": {
+      "item": "mmoservermod:raw_mithril"
+    },
+    "3": {
+      "item": "mmoservermod:raw_mithril"
+    },
+    "4": {
+      "item": "mmoservermod:raw_mithril"
+    },
+    "5": {
+      "item": "mmoservermod:raw_mithril"
+    },
+    "6": {
+      "item": "mmoservermod:raw_mithril"
+    },
+    "7": {
+      "item": "mmoservermod:raw_mithril"
+    },
+    "8": {
+      "item": "mmoservermod:raw_mithril"
+    }
+  },
+  "result": {
+    "item": "mmoservermod:raw_mithril_block",
+    "count": 1
+  }
+}

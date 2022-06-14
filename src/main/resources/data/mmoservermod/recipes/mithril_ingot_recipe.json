@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mmoservermod:mithril_block"
+    }
+  ],
+  "result": {
+    "item": "mmoservermod:mithril_ingot",
+    "count": 9
+  }
+}

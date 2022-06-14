@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "mmoservermod:mithril_ingot"
+    },
+    "2": {
+      "item": "mmoservermod:mithril_ingot"
+    },
+    "3": {
+      "item": "mmoservermod:mithril_ingot"
+    },
+    "4": {
+      "item": "mmoservermod:mithril_ingot"
+    },
+    "5": {
+      "item": "mmoservermod:mithril_ingot"
+    },
+    "6": {
+      "item": "mmoservermod:mithril_ingot"
+    },
+    "7": {
+      "item": "mmoservermod:mithril_ingot"
+    },
+    "8": {
+      "item": "mmoservermod:mithril_ingot"
+    }
+  },
+  "result": {
+    "item": "mmoservermod:mithril_armor_chestplate",
+    "count": 1
+  }
+}

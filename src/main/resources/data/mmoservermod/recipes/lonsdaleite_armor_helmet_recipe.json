@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "1": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "2": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "3": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "5": {
+      "item": "mmoservermod:lonsdaleite"
+    }
+  },
+  "result": {
+    "item": "mmoservermod:lonsdaleite_armor_helmet",
+    "count": 1
+  }
+}

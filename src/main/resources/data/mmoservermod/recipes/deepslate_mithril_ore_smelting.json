@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 1.0499999999999998,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "mmoservermod:deepslate_mithril_ore"
+  },
+  "result": "mmoservermod:mithril_ingot"
+}

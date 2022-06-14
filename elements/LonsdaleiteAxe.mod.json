@@ -1,0 +1,31 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "lonsdaleite_axe",
+    "customModelName": "Normal",
+    "name": "Lonsdaleite Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 6,
+    "efficiency": 14.0,
+    "attackSpeed": 1.2000000000000002,
+    "enchantability": 25,
+    "damageVsEntity": 18.0,
+    "usageCount": 3439,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Lonsdaleite"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

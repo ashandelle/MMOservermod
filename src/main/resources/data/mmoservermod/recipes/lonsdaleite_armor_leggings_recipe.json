@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "1": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "2": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "3": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "5": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "6": {
+      "item": "mmoservermod:lonsdaleite"
+    },
+    "8": {
+      "item": "mmoservermod:lonsdaleite"
+    }
+  },
+  "result": {
+    "item": "mmoservermod:lonsdaleite_armor_leggings",
+    "count": 1
+  }
+}

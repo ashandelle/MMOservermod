@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "mmoservermod:mithril_ingot"
+    },
+    "1": {
+      "item": "mmoservermod:mithril_ingot"
+    },
+    "2": {
+      "item": "mmoservermod:mithril_ingot"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "mmoservermod:mithril_axe",
+    "count": 1
+  }
+}

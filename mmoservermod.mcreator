@@ -1,0 +1,889 @@
+{
+  "mod_elements": [
+    {
+      "name": "LevelBar",
+      "type": "overlay",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "level_bar",
+      "path": "~/guis"
+    },
+    {
+      "name": "SetLevelCommandExecuted",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_level_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/commands"
+    },
+    {
+      "name": "SetLevel",
+      "type": "command",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_level",
+      "path": "~/commands"
+    },
+    {
+      "name": "SetExperienceCommandExecuted",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_experience_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
+          }
+        ]
+      },
+      "path": "~/commands"
+    },
+    {
+      "name": "SetExperience",
+      "type": "command",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_experience",
+      "path": "~/commands"
+    },
+    {
+      "name": "MithrilIngot",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_ingot",
+      "path": "~/items"
+    },
+    {
+      "name": "MithrilOre",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_ore",
+      "path": "~/blocks"
+    },
+    {
+      "name": "MithrilBlock",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_block",
+      "path": "~/blocks"
+    },
+    {
+      "name": "MithrilOreSmelting",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_ore_smelting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MithrilPickaxe",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_pickaxe",
+      "path": "~/tools"
+    },
+    {
+      "name": "MithrilAxe",
+      "type": "tool",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_axe",
+      "path": "~/tools"
+    },
+    {
+      "name": "MithrilSword",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_sword",
+      "path": "~/tools"
+    },
+    {
+      "name": "MithrilShovel",
+      "type": "tool",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_shovel",
+      "path": "~/tools"
+    },
+    {
+      "name": "MithrilHoe",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_hoe",
+      "path": "~/tools"
+    },
+    {
+      "name": "MithrilPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_pickaxe_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MithrilAxeRecipe",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_axe_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MithrilSwordRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_sword_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MithrilShovelRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_shovel_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MithrilHoeRecipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_hoe_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MithrilArmor",
+      "type": "armor",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/armor"
+    },
+    {
+      "name": "MithrilArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_armor_helmet_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MithrilArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_armor_body_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MithrilArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_armor_leggings_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MithrilArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_armor_boots_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PlayerStats",
+      "type": "gui",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_stats",
+      "path": "~/guis"
+    },
+    {
+      "name": "OpenStatsMenuOnKeyPressed",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_stats_menu_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/guis"
+    },
+    {
+      "name": "OpenStatsMenu",
+      "type": "keybind",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_stats_menu",
+      "path": "~/guis"
+    },
+    {
+      "name": "EnchantedGoldenAppleRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchanted_golden_apple_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "EntityDeathExperience",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "entity_death_experience",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "PlayerUpdateLevel",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_update_level",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "Stats",
+      "type": "command",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stats",
+      "path": "~/commands"
+    },
+    {
+      "name": "StatsCommandExecuted",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stats_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/commands"
+    },
+    {
+      "name": "DamageIndicator",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_indicator",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "DeepslateMithrilOre",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_mithril_ore",
+      "path": "~/blocks"
+    },
+    {
+      "name": "DeepslateMithrilOreSmelting",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_mithril_ore_smelting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "PlayerUpdateStats",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_update_stats",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "Lonsdaleite",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite",
+      "path": "~/items"
+    },
+    {
+      "name": "LonsdaleiteBlock",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_block",
+      "path": "~/blocks"
+    },
+    {
+      "name": "DeepslateLonsdaleiteOre",
+      "type": "block",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_lonsdaleite_ore",
+      "path": "~/blocks"
+    },
+    {
+      "name": "LonsdaleiteArmor",
+      "type": "armor",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/armor"
+    },
+    {
+      "name": "RawMithril",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_mithril",
+      "path": "~/items"
+    },
+    {
+      "name": "MithrilBlockRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_block_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "MithrilIngotRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_ingot_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "RawMithrilBlock",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_mithril_block",
+      "path": "~/blocks"
+    },
+    {
+      "name": "RawMithrilRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_mithril_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "RawMithrilBlockRecipe",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_mithril_block_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "RawMithrilSmelting",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_mithril_smelting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "LonsdaleiteSword",
+      "type": "tool",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_sword",
+      "path": "~/tools"
+    },
+    {
+      "name": "LonsdaleitePickaxe",
+      "type": "tool",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_pickaxe",
+      "path": "~/tools"
+    },
+    {
+      "name": "LonsdaleiteAxe",
+      "type": "tool",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_axe",
+      "path": "~/tools"
+    },
+    {
+      "name": "LonsdaleiteShovel",
+      "type": "tool",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_shovel",
+      "path": "~/tools"
+    },
+    {
+      "name": "LonsdaleiteHoe",
+      "type": "tool",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_hoe",
+      "path": "~/tools"
+    },
+    {
+      "name": "LonsdaleitePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_pickaxe_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "LonsdaleiteAxeRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_axe_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "LonsdaleiteSwordRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_sword_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "LonsdaleiteShovelRecipe",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_shovel_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "LonsdaleiteHoeRecipe",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_hoe_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "LonsdaleiteArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_armor_helmet_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "LonsdaleiteArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_armor_body_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "LonsdaleiteArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_armor_leggings_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "LonsdaleiteArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_armor_boots_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "LonsdaleiteBlockRecipe",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_block_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "LonsdaleiteRecipe",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_recipe",
+      "path": "~/recipes"
+    },
+    {
+      "name": "DeepslateLonsdaleiteOreSmelting",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_lonsdaleite_ore_smelting",
+      "path": "~/recipes"
+    },
+    {
+      "name": "OrichalcumIngot",
+      "type": "item",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_ingot",
+      "path": "~/items"
+    },
+    {
+      "name": "RawOrichalcum",
+      "type": "item",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_orichalcum",
+      "path": "~/items"
+    },
+    {
+      "name": "OrichalcumBlock",
+      "type": "block",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_block",
+      "path": "~/blocks"
+    },
+    {
+      "name": "RawOrichalcumBlock",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_orichalcum_block",
+      "path": "~/blocks"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "player_experience",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "player_level",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "player_max_experience",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1000.0"
+    },
+    {
+      "name": "player_percent_experience",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "player_stat_vitality",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "player_statpoints",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "player_truestat_vitality",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "20.0"
+    },
+    {
+      "name": "player_mana",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "player_max_mana",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "player_stat_intelligence",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "player_truestat_intelligence",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "10.0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.mmoservermod.mithril_axe": "Mithril Axe",
+      "item.mmoservermod.lonsdaleite_armor_leggings": "Lonsdaleite Leggings",
+      "block.mmoservermod.orichalcum_block": "Block of Orichalcum",
+      "item.mmoservermod.mithril_armor_chestplate": "Mithril Chestplate",
+      "block.mmoservermod.deepslate_mithril_ore": "Deepslate Mithril Ore",
+      "item.mmoservermod.mithril_pickaxe": "Mithril Pickaxe",
+      "item.mmoservermod.mithril_armor_leggings": "Mithril Leggings",
+      "block.mmoservermod.lonsdaleite_block": "Block of Lonsdaleite",
+      "block.mmoservermod.deepslate_lonsdaleite_ore": "Deepslate Lonsdaleite Ore",
+      "item.mmoservermod.lonsdaleite_armor_chestplate": "Lonsdaleite Chestplate",
+      "item.mmoservermod.mithril_hoe": "Mithril Hoe",
+      "item.mmoservermod.lonsdaleite_axe": "Lonsdaleite Axe",
+      "item.mmoservermod.mithril_ingot": "Mithril Ingot",
+      "item.mmoservermod.lonsdaleite": "Lonsdaleite",
+      "item.mmoservermod.lonsdaleite_armor_boots": "Lonsdaleite Boots",
+      "block.mmoservermod.raw_orichalcum_block": "Block of Raw Orichalcum",
+      "block.mmoservermod.mithril_ore": "Mithril Ore",
+      "item.mmoservermod.orichalcum_ingot": "Orichalcum Ingot",
+      "item.mmoservermod.raw_orichalcum": "Raw Orichalcum",
+      "item.mmoservermod.mithril_sword": "Mithril Sword",
+      "item.mmoservermod.mithril_shovel": "Mithril Shovel",
+      "item.mmoservermod.lonsdaleite_shovel": "Lonsdaleite Shovel",
+      "block.mmoservermod.mithril_block": "Block of Mithril",
+      "item.mmoservermod.lonsdaleite_hoe": "Lonsdaleite Hoe",
+      "block.mmoservermod.raw_mithril_block": "Block of Raw Mithril",
+      "key.mmoservermod.open_stats_menu": "Open Stats Menu",
+      "item.mmoservermod.lonsdaleite_sword": "Lonsdaleite Sword",
+      "item.mmoservermod.lonsdaleite_pickaxe": "Lonsdaleite Pickaxe",
+      "item.mmoservermod.raw_mithril": "Raw Mithril",
+      "item.mmoservermod.lonsdaleite_armor_helmet": "Lonsdaleite Helmet",
+      "item.mmoservermod.mithril_armor_boots": "Mithril Boots",
+      "item.mmoservermod.mithril_armor_helmet": "Mithril Helmet"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "commands",
+        "children": []
+      },
+      {
+        "name": "blocks",
+        "children": []
+      },
+      {
+        "name": "tools",
+        "children": []
+      },
+      {
+        "name": "armor",
+        "children": []
+      },
+      {
+        "name": "items",
+        "children": []
+      },
+      {
+        "name": "recipes",
+        "children": []
+      },
+      {
+        "name": "guis",
+        "children": []
+      },
+      {
+        "name": "procedures",
+        "children": []
+      },
+      {
+        "name": "dimensions",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "mmoservermod",
+    "modName": "MMOservermod",
+    "version": "1.0.0",
+    "author": "ashcl, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.mmoservermod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}

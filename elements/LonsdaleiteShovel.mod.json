@@ -1,0 +1,31 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "lonsdaleite_shovel",
+    "customModelName": "Normal",
+    "name": "Lonsdaleite Shovel",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 6,
+    "efficiency": 14.0,
+    "attackSpeed": 1.0,
+    "enchantability": 25,
+    "damageVsEntity": 11.5,
+    "usageCount": 3439,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Lonsdaleite"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

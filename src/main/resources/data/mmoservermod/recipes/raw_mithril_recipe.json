@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mmoservermod:raw_mithril_block"
+    }
+  ],
+  "result": {
+    "item": "mmoservermod:raw_mithril",
+    "count": 9
+  }
+}

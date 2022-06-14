@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "mmoservermod:mithril_ore",
+    "mmoservermod:mithril_block",
+    "mmoservermod:deepslate_mithril_ore",
+    "mmoservermod:lonsdaleite_block",
+    "mmoservermod:deepslate_lonsdaleite_ore",
+    "mmoservermod:raw_mithril_block",
+    "mmoservermod:orichalcum_block",
+    "mmoservermod:raw_orichalcum_block"
+  ]
+}
