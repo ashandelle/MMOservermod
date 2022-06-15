@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "mmoservermod:mithril_pickaxe"
+    },
+    "title": {
+      "translate": "advancements.craft_mithril_pickaxe.title"
+    },
+    "description": {
+      "translate": "advancements.craft_mithril_pickaxe.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "craft_mithril_pickaxe": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "mmoservermod:obtain_mithril_ingot"
+}

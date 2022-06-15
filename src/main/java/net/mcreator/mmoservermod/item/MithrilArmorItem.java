@@ -26,7 +26,7 @@ public abstract class MithrilArmorItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{3, 6, 7, 3}[slot.getIndex()];
+				return new int[]{5, 8, 11, 5}[slot.getIndex()];
 			}
 
 			@Override
@@ -51,7 +51,7 @@ public abstract class MithrilArmorItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 0.5f;
+				return 4f;
 			}
 
 			@Override

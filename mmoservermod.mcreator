@@ -719,6 +719,63 @@
       "locked_code": false,
       "registry_name": "raw_orichalcum_block",
       "path": "~/blocks"
+    },
+    {
+      "name": "CraftMithrilHoe",
+      "type": "achievement",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_mithril_hoe",
+      "path": "~/advancements"
+    },
+    {
+      "name": "CraftItemAdvancement",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_item_advancement",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/advancements"
+    },
+    {
+      "name": "ObtainMithrilIngot",
+      "type": "achievement",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obtain_mithril_ingot",
+      "path": "~/advancements"
+    },
+    {
+      "name": "CraftMithrilPickaxe",
+      "type": "achievement",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_mithril_pickaxe",
+      "path": "~/advancements"
+    },
+    {
+      "name": "NextLevel",
+      "type": "achievement",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "next_level",
+      "path": "~/advancements"
     }
   ],
   "variable_elements": [
@@ -796,6 +853,7 @@
       "item.mmoservermod.lonsdaleite_armor_leggings": "Lonsdaleite Leggings",
       "block.mmoservermod.orichalcum_block": "Block of Orichalcum",
       "item.mmoservermod.mithril_armor_chestplate": "Mithril Chestplate",
+      "advancements.next_level.descr": "New and uniqe blocks and items",
       "block.mmoservermod.deepslate_mithril_ore": "Deepslate Mithril Ore",
       "item.mmoservermod.mithril_pickaxe": "Mithril Pickaxe",
       "item.mmoservermod.mithril_armor_leggings": "Mithril Leggings",
@@ -803,6 +861,8 @@
       "block.mmoservermod.deepslate_lonsdaleite_ore": "Deepslate Lonsdaleite Ore",
       "item.mmoservermod.lonsdaleite_armor_chestplate": "Lonsdaleite Chestplate",
       "item.mmoservermod.mithril_hoe": "Mithril Hoe",
+      "advancements.craft_mithril_hoe.title": "Flaunting Wealth",
+      "advancements.obtain_mithril_ingot.descr": "Obtain a mithril ingot",
       "item.mmoservermod.lonsdaleite_axe": "Lonsdaleite Axe",
       "item.mmoservermod.mithril_ingot": "Mithril Ingot",
       "item.mmoservermod.lonsdaleite": "Lonsdaleite",
@@ -814,10 +874,15 @@
       "item.mmoservermod.mithril_sword": "Mithril Sword",
       "item.mmoservermod.mithril_shovel": "Mithril Shovel",
       "item.mmoservermod.lonsdaleite_shovel": "Lonsdaleite Shovel",
+      "advancements.craft_mithril_hoe.descr": "Craft a mithril hoe",
+      "advancements.craft_mithril_pickaxe.descr": "Craft a mithril pickaxe",
+      "advancements.obtain_mithril_ingot.title": "What\u0027s this?",
       "block.mmoservermod.mithril_block": "Block of Mithril",
       "item.mmoservermod.lonsdaleite_hoe": "Lonsdaleite Hoe",
       "block.mmoservermod.raw_mithril_block": "Block of Raw Mithril",
+      "advancements.next_level.title": "The Next Level",
       "key.mmoservermod.open_stats_menu": "Open Stats Menu",
+      "advancements.craft_mithril_pickaxe.title": "Magic Pickaxe",
       "item.mmoservermod.lonsdaleite_sword": "Lonsdaleite Sword",
       "item.mmoservermod.lonsdaleite_pickaxe": "Lonsdaleite Pickaxe",
       "item.mmoservermod.raw_mithril": "Raw Mithril",
@@ -863,6 +928,10 @@
       },
       {
         "name": "dimensions",
+        "children": []
+      },
+      {
+        "name": "advancements",
         "children": []
       }
     ]

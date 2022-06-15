@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "mmoservermod:mithril_hoe"
+    },
+    "title": {
+      "translate": "advancements.craft_mithril_hoe.title"
+    },
+    "description": {
+      "translate": "advancements.craft_mithril_hoe.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "craft_mithril_hoe": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "mmoservermod:obtain_mithril_ingot"
+}

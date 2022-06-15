@@ -26,12 +26,12 @@ public abstract class LonsdaleiteArmorItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{3, 6, 7, 3}[slot.getIndex()];
+				return new int[]{8, 11, 15, 8}[slot.getIndex()];
 			}
 
 			@Override
 			public int getEnchantmentValue() {
-				return 30;
+				return 20;
 			}
 
 			@Override
@@ -51,12 +51,12 @@ public abstract class LonsdaleiteArmorItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 0.5f;
+				return 5f;
 			}
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0f;
+				return 0.05f;
 			}
 		}, slot, properties);
 	}

@@ -1,0 +1,52 @@
+{
+  "display": {
+    "icon": {
+      "item": "mmoservermod:mithril_ingot"
+    },
+    "title": {
+      "translate": "advancements.obtain_mithril_ingot.title"
+    },
+    "description": {
+      "translate": "advancements.obtain_mithril_ingot.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_mithril_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mmoservermod:mithril_ingot"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "mmoservermod:mithril_pickaxe_recipe",
+      "mmoservermod:mithril_axe_recipe",
+      "mmoservermod:mithril_sword_recipe",
+      "mmoservermod:mithril_shovel_recipe",
+      "mmoservermod:mithril_hoe_recipe",
+      "mmoservermod:mithril_armor_helmet_recipe",
+      "mmoservermod:mithril_armor_body_recipe",
+      "mmoservermod:mithril_armor_leggings_recipe",
+      "mmoservermod:mithril_armor_boots_recipe",
+      "mmoservermod:mithril_block_recipe",
+      "mmoservermod:mithril_ingot_recipe"
+    ]
+  },
+  "parent": "mmoservermod:next_level"
+}
