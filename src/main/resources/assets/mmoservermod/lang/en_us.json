@@ -1,6 +1,6 @@
 {
-  "item.mmoservermod.mithril_axe": "Mithril Axe",
   "item.mmoservermod.lonsdaleite_armor_leggings": "Lonsdaleite Leggings",
+  "item.mmoservermod.mithril_axe": "Mithril Axe",
   "block.mmoservermod.orichalcum_block": "Block of Orichalcum",
   "item.mmoservermod.mithril_armor_chestplate": "Mithril Chestplate",
   "advancements.next_level.descr": "New and uniqe blocks and items",
@@ -26,6 +26,7 @@
   "item.mmoservermod.lonsdaleite_shovel": "Lonsdaleite Shovel",
   "advancements.craft_mithril_hoe.descr": "Craft a mithril hoe",
   "advancements.craft_mithril_pickaxe.descr": "Craft a mithril pickaxe",
+  "item.mmoservermod.adamantine_ingot": "Adamantine Ingot",
   "advancements.obtain_mithril_ingot.title": "What\u0027s this?",
   "block.mmoservermod.mithril_block": "Block of Mithril",
   "item.mmoservermod.lonsdaleite_hoe": "Lonsdaleite Hoe",
@@ -38,5 +39,6 @@
   "item.mmoservermod.raw_mithril": "Raw Mithril",
   "item.mmoservermod.lonsdaleite_armor_helmet": "Lonsdaleite Helmet",
   "item.mmoservermod.mithril_armor_boots": "Mithril Boots",
-  "item.mmoservermod.mithril_armor_helmet": "Mithril Helmet"
+  "item.mmoservermod.mithril_armor_helmet": "Mithril Helmet",
+  "item.mmoservermod.raw_adamantine": "Raw Adamantine"
 }

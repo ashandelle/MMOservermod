@@ -15,6 +15,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.mmoservermod.item.RawOrichalcumItem;
 import net.mcreator.mmoservermod.item.RawMithrilItem;
+import net.mcreator.mmoservermod.item.RawAdamantineItem;
 import net.mcreator.mmoservermod.item.OrichalcumIngotItem;
 import net.mcreator.mmoservermod.item.MithrilSwordItem;
 import net.mcreator.mmoservermod.item.MithrilShovelItem;
@@ -30,6 +31,7 @@ import net.mcreator.mmoservermod.item.LonsdaleiteItem;
 import net.mcreator.mmoservermod.item.LonsdaleiteHoeItem;
 import net.mcreator.mmoservermod.item.LonsdaleiteAxeItem;
 import net.mcreator.mmoservermod.item.LonsdaleiteArmorItem;
+import net.mcreator.mmoservermod.item.AdamantineIngotItem;
 import net.mcreator.mmoservermod.MmoservermodMod;
 
 public class MmoservermodModItems {
@@ -74,6 +76,8 @@ public class MmoservermodModItems {
 	public static final RegistryObject<Item> ORICHALCUM_BLOCK = block(MmoservermodModBlocks.ORICHALCUM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> RAW_ORICHALCUM_BLOCK = block(MmoservermodModBlocks.RAW_ORICHALCUM_BLOCK,
 			CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> ADAMANTINE_INGOT = REGISTRY.register("adamantine_ingot", () -> new AdamantineIngotItem());
+	public static final RegistryObject<Item> RAW_ADAMANTINE = REGISTRY.register("raw_adamantine", () -> new RawAdamantineItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
