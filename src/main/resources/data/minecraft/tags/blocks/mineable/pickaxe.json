@@ -8,6 +8,8 @@
     "mmoservermod:deepslate_lonsdaleite_ore",
     "mmoservermod:raw_mithril_block",
     "mmoservermod:orichalcum_block",
-    "mmoservermod:raw_orichalcum_block"
+    "mmoservermod:raw_orichalcum_block",
+    "mmoservermod:raw_adamantine_block",
+    "mmoservermod:adamantine_block"
   ]
 }

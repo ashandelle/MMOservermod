@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mmoservermod:block/raw_adamantine_block"
+    }
+  }
+}

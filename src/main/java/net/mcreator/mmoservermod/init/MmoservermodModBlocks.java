@@ -12,12 +12,14 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.mmoservermod.block.RawOrichalcumBlockBlock;
 import net.mcreator.mmoservermod.block.RawMithrilBlockBlock;
+import net.mcreator.mmoservermod.block.RawAdamantineBlockBlock;
 import net.mcreator.mmoservermod.block.OrichalcumBlockBlock;
 import net.mcreator.mmoservermod.block.MithrilOreBlock;
 import net.mcreator.mmoservermod.block.MithrilBlockBlock;
 import net.mcreator.mmoservermod.block.LonsdaleiteBlockBlock;
 import net.mcreator.mmoservermod.block.DeepslateMithrilOreBlock;
 import net.mcreator.mmoservermod.block.DeepslateLonsdaleiteOreBlock;
+import net.mcreator.mmoservermod.block.AdamantineBlockBlock;
 import net.mcreator.mmoservermod.MmoservermodMod;
 
 public class MmoservermodModBlocks {
@@ -32,4 +34,6 @@ public class MmoservermodModBlocks {
 	public static final RegistryObject<Block> RAW_MITHRIL_BLOCK = REGISTRY.register("raw_mithril_block", () -> new RawMithrilBlockBlock());
 	public static final RegistryObject<Block> ORICHALCUM_BLOCK = REGISTRY.register("orichalcum_block", () -> new OrichalcumBlockBlock());
 	public static final RegistryObject<Block> RAW_ORICHALCUM_BLOCK = REGISTRY.register("raw_orichalcum_block", () -> new RawOrichalcumBlockBlock());
+	public static final RegistryObject<Block> RAW_ADAMANTINE_BLOCK = REGISTRY.register("raw_adamantine_block", () -> new RawAdamantineBlockBlock());
+	public static final RegistryObject<Block> ADAMANTINE_BLOCK = REGISTRY.register("adamantine_block", () -> new AdamantineBlockBlock());
 }

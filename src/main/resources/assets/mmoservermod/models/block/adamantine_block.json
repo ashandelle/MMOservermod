@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mmoservermod:blocks/adamantine_block",
+    "particle": "mmoservermod:blocks/adamantine_block"
+  }
+}

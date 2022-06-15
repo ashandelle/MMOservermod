@@ -78,6 +78,9 @@ public class MmoservermodModItems {
 			CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> ADAMANTINE_INGOT = REGISTRY.register("adamantine_ingot", () -> new AdamantineIngotItem());
 	public static final RegistryObject<Item> RAW_ADAMANTINE = REGISTRY.register("raw_adamantine", () -> new RawAdamantineItem());
+	public static final RegistryObject<Item> RAW_ADAMANTINE_BLOCK = block(MmoservermodModBlocks.RAW_ADAMANTINE_BLOCK,
+			CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> ADAMANTINE_BLOCK = block(MmoservermodModBlocks.ADAMANTINE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
