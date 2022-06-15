@@ -83,6 +83,7 @@ public class MmoservermodModVariables {
 			clone.player_max_mana = original.player_max_mana;
 			clone.player_stat_intelligence = original.player_stat_intelligence;
 			clone.player_truestat_intelligence = original.player_truestat_intelligence;
+			clone.player_system_multiplier = original.player_system_multiplier;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -129,7 +130,8 @@ public class MmoservermodModVariables {
 		public double player_mana = 100.0;
 		public double player_max_mana = 100.0;
 		public double player_stat_intelligence = 0;
-		public double player_truestat_intelligence = 10.0;
+		public double player_truestat_intelligence = 100.0;
+		public double player_system_multiplier = 1.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -149,6 +151,7 @@ public class MmoservermodModVariables {
 			nbt.putDouble("player_max_mana", player_max_mana);
 			nbt.putDouble("player_stat_intelligence", player_stat_intelligence);
 			nbt.putDouble("player_truestat_intelligence", player_truestat_intelligence);
+			nbt.putDouble("player_system_multiplier", player_system_multiplier);
 			return nbt;
 		}
 
@@ -165,6 +168,7 @@ public class MmoservermodModVariables {
 			player_max_mana = nbt.getDouble("player_max_mana");
 			player_stat_intelligence = nbt.getDouble("player_stat_intelligence");
 			player_truestat_intelligence = nbt.getDouble("player_truestat_intelligence");
+			player_system_multiplier = nbt.getDouble("player_system_multiplier");
 		}
 	}
 
@@ -201,6 +205,7 @@ public class MmoservermodModVariables {
 					variables.player_max_mana = message.data.player_max_mana;
 					variables.player_stat_intelligence = message.data.player_stat_intelligence;
 					variables.player_truestat_intelligence = message.data.player_truestat_intelligence;
+					variables.player_system_multiplier = message.data.player_system_multiplier;
 				}
 			});
 			context.setPacketHandled(true);

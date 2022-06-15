@@ -67,7 +67,9 @@ public class PlayerUpdateLevelProcedure {
 		while ((entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new MmoservermodModVariables.PlayerVariables())).player_experience >= (entity
 						.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new MmoservermodModVariables.PlayerVariables())).player_max_experience) {
+						.orElse(new MmoservermodModVariables.PlayerVariables())).player_max_experience
+				&& (entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new MmoservermodModVariables.PlayerVariables())).player_system_multiplier >= 1) {
 			{
 				double _setval = (entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new MmoservermodModVariables.PlayerVariables())).player_experience

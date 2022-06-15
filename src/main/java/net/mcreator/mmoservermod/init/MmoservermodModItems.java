@@ -17,6 +17,7 @@ import net.mcreator.mmoservermod.item.RawOrichalcumItem;
 import net.mcreator.mmoservermod.item.RawMithrilItem;
 import net.mcreator.mmoservermod.item.RawAdamantineItem;
 import net.mcreator.mmoservermod.item.OrichalcumIngotItem;
+import net.mcreator.mmoservermod.item.OrichalcumArmorItem;
 import net.mcreator.mmoservermod.item.MithrilSwordItem;
 import net.mcreator.mmoservermod.item.MithrilShovelItem;
 import net.mcreator.mmoservermod.item.MithrilPickaxeItem;
@@ -32,6 +33,7 @@ import net.mcreator.mmoservermod.item.LonsdaleiteHoeItem;
 import net.mcreator.mmoservermod.item.LonsdaleiteAxeItem;
 import net.mcreator.mmoservermod.item.LonsdaleiteArmorItem;
 import net.mcreator.mmoservermod.item.AdamantineIngotItem;
+import net.mcreator.mmoservermod.item.AdamantineArmorItem;
 import net.mcreator.mmoservermod.MmoservermodMod;
 
 public class MmoservermodModItems {
@@ -81,6 +83,22 @@ public class MmoservermodModItems {
 	public static final RegistryObject<Item> RAW_ADAMANTINE_BLOCK = block(MmoservermodModBlocks.RAW_ADAMANTINE_BLOCK,
 			CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> ADAMANTINE_BLOCK = block(MmoservermodModBlocks.ADAMANTINE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> ORICHALCUM_ARMOR_HELMET = REGISTRY.register("orichalcum_armor_helmet",
+			() -> new OrichalcumArmorItem.Helmet());
+	public static final RegistryObject<Item> ORICHALCUM_ARMOR_CHESTPLATE = REGISTRY.register("orichalcum_armor_chestplate",
+			() -> new OrichalcumArmorItem.Chestplate());
+	public static final RegistryObject<Item> ORICHALCUM_ARMOR_LEGGINGS = REGISTRY.register("orichalcum_armor_leggings",
+			() -> new OrichalcumArmorItem.Leggings());
+	public static final RegistryObject<Item> ORICHALCUM_ARMOR_BOOTS = REGISTRY.register("orichalcum_armor_boots",
+			() -> new OrichalcumArmorItem.Boots());
+	public static final RegistryObject<Item> ADAMANTINE_ARMOR_HELMET = REGISTRY.register("adamantine_armor_helmet",
+			() -> new AdamantineArmorItem.Helmet());
+	public static final RegistryObject<Item> ADAMANTINE_ARMOR_CHESTPLATE = REGISTRY.register("adamantine_armor_chestplate",
+			() -> new AdamantineArmorItem.Chestplate());
+	public static final RegistryObject<Item> ADAMANTINE_ARMOR_LEGGINGS = REGISTRY.register("adamantine_armor_leggings",
+			() -> new AdamantineArmorItem.Leggings());
+	public static final RegistryObject<Item> ADAMANTINE_ARMOR_BOOTS = REGISTRY.register("adamantine_armor_boots",
+			() -> new AdamantineArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
