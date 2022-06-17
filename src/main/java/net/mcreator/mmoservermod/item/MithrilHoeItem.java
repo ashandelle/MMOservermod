@@ -30,7 +30,7 @@ public class MithrilHoeItem extends HoeItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 25;
+				return 30;
 			}
 
 			public Ingredient getRepairIngredient() {

@@ -247,57 +247,6 @@
       "path": "~/recipes"
     },
     {
-      "name": "PlayerStats",
-      "type": "gui",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "player_stats",
-      "path": "~/guis"
-    },
-    {
-      "name": "OpenStatsMenuOnKeyPressed",
-      "type": "procedure",
-      "sortid": 28,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_stats_menu_on_key_pressed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/guis"
-    },
-    {
-      "name": "OpenStatsMenu",
-      "type": "keybind",
-      "sortid": 28,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_stats_menu",
-      "path": "~/guis"
-    },
-    {
       "name": "EnchantedGoldenAppleRecipe",
       "type": "recipe",
       "sortid": 30,
@@ -863,6 +812,114 @@
         "ec": true
       },
       "path": "~/armor"
+    },
+    {
+      "name": "OrichalcumSword",
+      "type": "tool",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_sword",
+      "path": "~/tools"
+    },
+    {
+      "name": "OrichalcumPickaxe",
+      "type": "tool",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_pickaxe",
+      "path": "~/tools"
+    },
+    {
+      "name": "OrichalcumAxe",
+      "type": "tool",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_axe",
+      "path": "~/tools"
+    },
+    {
+      "name": "OrichalcumShovel",
+      "type": "tool",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_shovel",
+      "path": "~/tools"
+    },
+    {
+      "name": "OrichalcumHoe",
+      "type": "tool",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_hoe",
+      "path": "~/tools"
+    },
+    {
+      "name": "AdamantineSword",
+      "type": "tool",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adamantine_sword",
+      "path": "~/tools"
+    },
+    {
+      "name": "GoldGolemLoot",
+      "type": "loottable",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_golem_loot",
+      "path": "~/loot"
+    },
+    {
+      "name": "AdamantinePickaxe",
+      "type": "tool",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adamantine_pickaxe",
+      "path": "~/tools"
+    },
+    {
+      "name": "AdamantineAxe",
+      "type": "tool",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adamantine_axe",
+      "path": "~/tools"
+    },
+    {
+      "name": "AdamantineShovel",
+      "type": "tool",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adamantine_shovel",
+      "path": "~/tools"
+    },
+    {
+      "name": "AdamantineHoe",
+      "type": "tool",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adamantine_hoe",
+      "path": "~/tools"
+    },
+    {
+      "name": "Skillbook",
+      "type": "item",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skillbook",
+      "path": "~/items"
     }
   ],
   "variable_elements": [
@@ -883,12 +940,6 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "1000.0"
-    },
-    {
-      "name": "player_percent_experience",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
     },
     {
       "name": "player_stat_vitality",
@@ -942,39 +993,47 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.mmoservermod.skillbook": "Skillbook",
       "item.mmoservermod.lonsdaleite_armor_leggings": "Lonsdaleite Leggings",
+      "item.mmoservermod.adamantine_pickaxe": "Adamantine Pickaxe",
+      "item.mmoservermod.orichalcum_shovel": "Orichalcum Shovel",
       "block.mmoservermod.raw_adamantine_block": "Block of Raw Adamantine",
       "item.mmoservermod.mithril_armor_chestplate": "Mithril Chestplate",
       "advancements.next_level.descr": "New and uniqe blocks and items",
-      "item.mmoservermod.mithril_armor_leggings": "Mithril Leggings",
+      "item.mmoservermod.adamantine_sword": "Adamantine Sword",
+      "item.mmoservermod.orichalcum_pickaxe": "Orichalcum Pickaxe",
       "item.mmoservermod.mithril_pickaxe": "Mithril Pickaxe",
+      "item.mmoservermod.mithril_armor_leggings": "Mithril Leggings",
       "block.mmoservermod.deepslate_lonsdaleite_ore": "Deepslate Lonsdaleite Ore",
+      "item.mmoservermod.adamantine_shovel": "Adamantine Shovel",
       "item.mmoservermod.lonsdaleite_armor_chestplate": "Lonsdaleite Chestplate",
       "item.mmoservermod.mithril_hoe": "Mithril Hoe",
       "advancements.craft_mithril_hoe.title": "Flaunting Wealth",
       "advancements.obtain_mithril_ingot.descr": "Obtain a mithril ingot",
       "item.mmoservermod.lonsdaleite_axe": "Lonsdaleite Axe",
-      "item.mmoservermod.lonsdaleite_armor_boots": "Lonsdaleite Boots",
       "item.mmoservermod.mithril_ingot": "Mithril Ingot",
+      "item.mmoservermod.lonsdaleite_armor_boots": "Lonsdaleite Boots",
       "item.mmoservermod.orichalcum_ingot": "Orichalcum Ingot",
-      "item.mmoservermod.lonsdaleite_shovel": "Lonsdaleite Shovel",
-      "item.mmoservermod.mithril_shovel": "Mithril Shovel",
       "item.mmoservermod.adamantine_ingot": "Adamantine Ingot",
+      "item.mmoservermod.mithril_shovel": "Mithril Shovel",
+      "item.mmoservermod.lonsdaleite_shovel": "Lonsdaleite Shovel",
+      "item.mmoservermod.adamantine_axe": "Adamantine Axe",
       "advancements.obtain_mithril_ingot.title": "What\u0027s this?",
       "block.mmoservermod.mithril_block": "Block of Mithril",
       "advancements.next_level.title": "The Next Level",
-      "key.mmoservermod.open_stats_menu": "Open Stats Menu",
       "item.mmoservermod.orichalcum_armor_boots": "Orichalcum Boots",
       "advancements.craft_mithril_pickaxe.title": "Magic Pickaxe",
       "item.mmoservermod.lonsdaleite_sword": "Lonsdaleite Sword",
       "item.mmoservermod.orichalcum_armor_chestplate": "Orichalcum Chestplate",
       "item.mmoservermod.lonsdaleite_pickaxe": "Lonsdaleite Pickaxe",
+      "item.mmoservermod.orichalcum_hoe": "Orichalcum Hoe",
       "item.mmoservermod.mithril_axe": "Mithril Axe",
       "block.mmoservermod.orichalcum_block": "Block of Orichalcum",
       "block.mmoservermod.deepslate_mithril_ore": "Deepslate Mithril Ore",
       "block.mmoservermod.lonsdaleite_block": "Block of Lonsdaleite",
       "item.mmoservermod.orichalcum_armor_helmet": "Orichalcum Helmet",
       "item.mmoservermod.adamantine_armor_leggings": "Adamantine Leggings",
+      "item.mmoservermod.orichalcum_sword": "Orichalcum Sword",
       "item.mmoservermod.lonsdaleite": "Lonsdaleite",
       "block.mmoservermod.raw_orichalcum_block": "Block of Raw Orichalcum",
       "block.mmoservermod.mithril_ore": "Mithril Ore",
@@ -984,9 +1043,11 @@
       "item.mmoservermod.mithril_sword": "Mithril Sword",
       "item.mmoservermod.orichalcum_armor_leggings": "Orichalcum Leggings",
       "item.mmoservermod.adamantine_armor_helmet": "Adamantine Helmet",
+      "item.mmoservermod.orichalcum_axe": "Orichalcum Axe",
       "item.mmoservermod.lonsdaleite_hoe": "Lonsdaleite Hoe",
       "block.mmoservermod.raw_mithril_block": "Block of Raw Mithril",
       "block.mmoservermod.adamantine_block": "Block of Adamantine",
+      "item.mmoservermod.adamantine_hoe": "Adamantine Hoe",
       "item.mmoservermod.raw_mithril": "Raw Mithril",
       "item.mmoservermod.adamantine_armor_chestplate": "Adamantine Chestplate",
       "item.mmoservermod.adamantine_armor_boots": "Adamantine Boots",
@@ -1037,6 +1098,14 @@
       },
       {
         "name": "advancements",
+        "children": []
+      },
+      {
+        "name": "mobs",
+        "children": []
+      },
+      {
+        "name": "loot",
         "children": []
       }
     ]

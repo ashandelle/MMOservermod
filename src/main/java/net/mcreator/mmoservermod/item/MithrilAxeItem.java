@@ -30,7 +30,7 @@ public class MithrilAxeItem extends AxeItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 25;
+				return 30;
 			}
 
 			public Ingredient getRepairIngredient() {

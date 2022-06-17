@@ -75,7 +75,6 @@ public class MmoservermodModVariables {
 			clone.player_experience = original.player_experience;
 			clone.player_level = original.player_level;
 			clone.player_max_experience = original.player_max_experience;
-			clone.player_percent_experience = original.player_percent_experience;
 			clone.player_stat_vitality = original.player_stat_vitality;
 			clone.player_statpoints = original.player_statpoints;
 			clone.player_truestat_vitality = original.player_truestat_vitality;
@@ -123,7 +122,6 @@ public class MmoservermodModVariables {
 		public double player_experience = 0.0;
 		public double player_level = 1.0;
 		public double player_max_experience = 1000.0;
-		public double player_percent_experience = 0;
 		public double player_stat_vitality = 0;
 		public double player_statpoints = 0;
 		public double player_truestat_vitality = 20.0;
@@ -143,7 +141,6 @@ public class MmoservermodModVariables {
 			nbt.putDouble("player_experience", player_experience);
 			nbt.putDouble("player_level", player_level);
 			nbt.putDouble("player_max_experience", player_max_experience);
-			nbt.putDouble("player_percent_experience", player_percent_experience);
 			nbt.putDouble("player_stat_vitality", player_stat_vitality);
 			nbt.putDouble("player_statpoints", player_statpoints);
 			nbt.putDouble("player_truestat_vitality", player_truestat_vitality);
@@ -160,7 +157,6 @@ public class MmoservermodModVariables {
 			player_experience = nbt.getDouble("player_experience");
 			player_level = nbt.getDouble("player_level");
 			player_max_experience = nbt.getDouble("player_max_experience");
-			player_percent_experience = nbt.getDouble("player_percent_experience");
 			player_stat_vitality = nbt.getDouble("player_stat_vitality");
 			player_statpoints = nbt.getDouble("player_statpoints");
 			player_truestat_vitality = nbt.getDouble("player_truestat_vitality");
@@ -197,7 +193,6 @@ public class MmoservermodModVariables {
 					variables.player_experience = message.data.player_experience;
 					variables.player_level = message.data.player_level;
 					variables.player_max_experience = message.data.player_max_experience;
-					variables.player_percent_experience = message.data.player_percent_experience;
 					variables.player_stat_vitality = message.data.player_stat_vitality;
 					variables.player_statpoints = message.data.player_statpoints;
 					variables.player_truestat_vitality = message.data.player_truestat_vitality;

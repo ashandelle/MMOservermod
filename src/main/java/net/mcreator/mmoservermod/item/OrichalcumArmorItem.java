@@ -63,7 +63,7 @@ public abstract class OrichalcumArmorItem extends ArmorItem {
 
 	public static class Helmet extends OrichalcumArmorItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
 		}
 
 		@Override
@@ -74,7 +74,7 @@ public abstract class OrichalcumArmorItem extends ArmorItem {
 
 	public static class Chestplate extends OrichalcumArmorItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
 		}
 
 		@Override
@@ -85,7 +85,7 @@ public abstract class OrichalcumArmorItem extends ArmorItem {
 
 	public static class Leggings extends OrichalcumArmorItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
 		}
 
 		@Override
@@ -96,7 +96,7 @@ public abstract class OrichalcumArmorItem extends ArmorItem {
 
 	public static class Boots extends OrichalcumArmorItem {
 		public Boots() {
-			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
 		}
 
 		@Override

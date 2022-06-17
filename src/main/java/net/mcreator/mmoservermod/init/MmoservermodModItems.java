@@ -13,10 +13,16 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.mmoservermod.item.SkillbookItem;
 import net.mcreator.mmoservermod.item.RawOrichalcumItem;
 import net.mcreator.mmoservermod.item.RawMithrilItem;
 import net.mcreator.mmoservermod.item.RawAdamantineItem;
+import net.mcreator.mmoservermod.item.OrichalcumSwordItem;
+import net.mcreator.mmoservermod.item.OrichalcumShovelItem;
+import net.mcreator.mmoservermod.item.OrichalcumPickaxeItem;
 import net.mcreator.mmoservermod.item.OrichalcumIngotItem;
+import net.mcreator.mmoservermod.item.OrichalcumHoeItem;
+import net.mcreator.mmoservermod.item.OrichalcumAxeItem;
 import net.mcreator.mmoservermod.item.OrichalcumArmorItem;
 import net.mcreator.mmoservermod.item.MithrilSwordItem;
 import net.mcreator.mmoservermod.item.MithrilShovelItem;
@@ -32,7 +38,12 @@ import net.mcreator.mmoservermod.item.LonsdaleiteItem;
 import net.mcreator.mmoservermod.item.LonsdaleiteHoeItem;
 import net.mcreator.mmoservermod.item.LonsdaleiteAxeItem;
 import net.mcreator.mmoservermod.item.LonsdaleiteArmorItem;
+import net.mcreator.mmoservermod.item.AdamantineSwordItem;
+import net.mcreator.mmoservermod.item.AdamantineShovelItem;
+import net.mcreator.mmoservermod.item.AdamantinePickaxeItem;
 import net.mcreator.mmoservermod.item.AdamantineIngotItem;
+import net.mcreator.mmoservermod.item.AdamantineHoeItem;
+import net.mcreator.mmoservermod.item.AdamantineAxeItem;
 import net.mcreator.mmoservermod.item.AdamantineArmorItem;
 import net.mcreator.mmoservermod.MmoservermodMod;
 
@@ -99,6 +110,17 @@ public class MmoservermodModItems {
 			() -> new AdamantineArmorItem.Leggings());
 	public static final RegistryObject<Item> ADAMANTINE_ARMOR_BOOTS = REGISTRY.register("adamantine_armor_boots",
 			() -> new AdamantineArmorItem.Boots());
+	public static final RegistryObject<Item> ORICHALCUM_SWORD = REGISTRY.register("orichalcum_sword", () -> new OrichalcumSwordItem());
+	public static final RegistryObject<Item> ORICHALCUM_PICKAXE = REGISTRY.register("orichalcum_pickaxe", () -> new OrichalcumPickaxeItem());
+	public static final RegistryObject<Item> ORICHALCUM_AXE = REGISTRY.register("orichalcum_axe", () -> new OrichalcumAxeItem());
+	public static final RegistryObject<Item> ORICHALCUM_SHOVEL = REGISTRY.register("orichalcum_shovel", () -> new OrichalcumShovelItem());
+	public static final RegistryObject<Item> ORICHALCUM_HOE = REGISTRY.register("orichalcum_hoe", () -> new OrichalcumHoeItem());
+	public static final RegistryObject<Item> ADAMANTINE_SWORD = REGISTRY.register("adamantine_sword", () -> new AdamantineSwordItem());
+	public static final RegistryObject<Item> ADAMANTINE_PICKAXE = REGISTRY.register("adamantine_pickaxe", () -> new AdamantinePickaxeItem());
+	public static final RegistryObject<Item> ADAMANTINE_AXE = REGISTRY.register("adamantine_axe", () -> new AdamantineAxeItem());
+	public static final RegistryObject<Item> ADAMANTINE_SHOVEL = REGISTRY.register("adamantine_shovel", () -> new AdamantineShovelItem());
+	public static final RegistryObject<Item> ADAMANTINE_HOE = REGISTRY.register("adamantine_hoe", () -> new AdamantineHoeItem());
+	public static final RegistryObject<Item> SKILLBOOK = REGISTRY.register("skillbook", () -> new SkillbookItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

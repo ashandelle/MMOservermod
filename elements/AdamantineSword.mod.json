@@ -1,0 +1,31 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "adamantine_sword",
+    "customModelName": "Normal",
+    "name": "Adamantine Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 8,
+    "efficiency": 18.0,
+    "attackSpeed": 1.6,
+    "enchantability": 30,
+    "damageVsEntity": 36.0,
+    "usageCount": 5823,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:AdamantineIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

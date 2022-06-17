@@ -1,0 +1,31 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "orichalcum_shovel",
+    "customModelName": "Normal",
+    "name": "Orichalcum Shovel",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 7,
+    "efficiency": 16.0,
+    "attackSpeed": 1.0,
+    "enchantability": 40,
+    "damageVsEntity": 15.5,
+    "usageCount": 4475,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:OrichalcumIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

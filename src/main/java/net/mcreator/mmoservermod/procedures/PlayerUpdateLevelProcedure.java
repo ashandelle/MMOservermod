@@ -53,23 +53,12 @@ public class PlayerUpdateLevelProcedure {
 				});
 			}
 		}
-		{
-			double _setval = Math.floor(((entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new MmoservermodModVariables.PlayerVariables())).player_experience
-					/ (entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new MmoservermodModVariables.PlayerVariables())).player_max_experience)
-					* 10000) / 100;
-			entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.player_percent_experience = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
 		while ((entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new MmoservermodModVariables.PlayerVariables())).player_experience >= (entity
 						.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new MmoservermodModVariables.PlayerVariables())).player_max_experience
 				&& (entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new MmoservermodModVariables.PlayerVariables())).player_system_multiplier >= 1) {
+						.orElse(new MmoservermodModVariables.PlayerVariables())).player_system_multiplier > 0) {
 			{
 				double _setval = (entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new MmoservermodModVariables.PlayerVariables())).player_experience
@@ -119,17 +108,6 @@ public class PlayerUpdateLevelProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-			}
-			{
-				double _setval = Math.floor(((entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new MmoservermodModVariables.PlayerVariables())).player_experience
-						/ (entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new MmoservermodModVariables.PlayerVariables())).player_max_experience)
-						* 10000) / 100;
-				entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.player_percent_experience = _setval;
-					capability.syncPlayerVariables(entity);
-				});
 			}
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("mmoservermod:next_level"));

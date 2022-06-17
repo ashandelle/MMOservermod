@@ -1,0 +1,31 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "orichalcum_hoe",
+    "customModelName": "Normal",
+    "name": "Orichalcum Hoe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Hoe",
+    "harvestLevel": 7,
+    "efficiency": 16.0,
+    "attackSpeed": 6.0,
+    "enchantability": 40,
+    "damageVsEntity": 1.5,
+    "usageCount": 4475,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:OrichalcumIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

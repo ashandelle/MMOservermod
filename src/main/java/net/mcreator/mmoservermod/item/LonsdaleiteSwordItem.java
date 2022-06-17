@@ -30,12 +30,12 @@ public class LonsdaleiteSwordItem extends SwordItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 25;
+				return 20;
 			}
 
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(MmoservermodModItems.LONSDALEITE.get()));
 			}
-		}, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+		}, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
 	}
 }

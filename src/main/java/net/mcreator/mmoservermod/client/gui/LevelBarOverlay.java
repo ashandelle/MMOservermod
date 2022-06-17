@@ -51,8 +51,9 @@ public class LevelBarOverlay {
 								+ (int) ((entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 										.orElse(new MmoservermodModVariables.PlayerVariables())).player_max_experience)
 								+ " ("
-								+ ((entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new MmoservermodModVariables.PlayerVariables())).player_percent_experience)
+								+ (100 * ((entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								.orElse(new MmoservermodModVariables.PlayerVariables())).player_experience) / ((entity.getCapability(MmoservermodModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new MmoservermodModVariables.PlayerVariables())).player_max_experience))
 								+ "%)",
 						20, h - 90, -2302756);
 			}

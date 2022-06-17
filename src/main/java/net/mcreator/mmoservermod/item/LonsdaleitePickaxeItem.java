@@ -30,12 +30,12 @@ public class LonsdaleitePickaxeItem extends PickaxeItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 25;
+				return 20;
 			}
 
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(MmoservermodModItems.LONSDALEITE.get()));
 			}
-		}, 1, -2.7999999999999998f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+		}, 1, -2.7999999999999998f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).fireResistant());
 	}
 }
