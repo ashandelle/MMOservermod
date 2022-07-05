@@ -4,10 +4,10 @@
     "layer0": "mmoservermod:items/skillbook_0"
   },
   "overrides": [
-  	{"predicate": {"custom_model_data": 1}, "model": "mmoservermod:items/skillbook_1"},
-  	{"predicate": {"custom_model_data": 2}, "model": "mmoservermod:items/skillbook_2"},
-  	{"predicate": {"custom_model_data": 3}, "model": "mmoservermod:items/skillbook_3"},
-  	{"predicate": {"custom_model_data": 4}, "model": "mmoservermod:items/skillbook_4"},
-  	{"predicate": {"custom_model_data": 5}, "model": "mmoservermod:items/skillbook_5"}
+  	{ "predicate": { "custom_model_data": 1}, "model": "mmoservermod:item/skillbook_1"},
+  	{ "predicate": { "custom_model_data": 2}, "model": "mmoservermod:item/skillbook_2"},
+  	{ "predicate": { "custom_model_data": 3}, "model": "mmoservermod:item/skillbook_3"},
+  	{ "predicate": { "custom_model_data": 4}, "model": "mmoservermod:item/skillbook_4"},
+  	{ "predicate": { "custom_model_data": 5}, "model": "mmoservermod:item/skillbook_5"}
   ]
 }
