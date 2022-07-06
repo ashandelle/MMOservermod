@@ -920,6 +920,32 @@
       "locked_code": true,
       "registry_name": "skillbook",
       "path": "~/items"
+    },
+    {
+      "name": "GoldGolem",
+      "type": "livingentity",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_golem",
+      "path": "~/mobs"
+    },
+    {
+      "name": "EntitySpawn",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/procedures"
     }
   ],
   "variable_elements": [
@@ -1021,6 +1047,7 @@
       "advancements.obtain_mithril_ingot.title": "What\u0027s this?",
       "block.mmoservermod.mithril_block": "Block of Mithril",
       "advancements.next_level.title": "The Next Level",
+      "item.mmoservermod.gold_golem_spawn_egg": "Gold Golem Spawn Egg",
       "item.mmoservermod.orichalcum_armor_boots": "Orichalcum Boots",
       "advancements.craft_mithril_pickaxe.title": "Magic Pickaxe",
       "item.mmoservermod.lonsdaleite_sword": "Lonsdaleite Sword",
@@ -1047,6 +1074,7 @@
       "item.mmoservermod.lonsdaleite_hoe": "Lonsdaleite Hoe",
       "block.mmoservermod.raw_mithril_block": "Block of Raw Mithril",
       "block.mmoservermod.adamantine_block": "Block of Adamantine",
+      "entity.mmoservermod.gold_golem": "Gold Golem",
       "item.mmoservermod.adamantine_hoe": "Adamantine Hoe",
       "item.mmoservermod.raw_mithril": "Raw Mithril",
       "item.mmoservermod.adamantine_armor_chestplate": "Adamantine Chestplate",

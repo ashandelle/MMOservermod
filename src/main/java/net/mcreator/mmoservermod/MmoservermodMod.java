@@ -28,6 +28,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.mmoservermod.init.MmoservermodModItems;
 import net.mcreator.mmoservermod.init.MmoservermodModFeatures;
+import net.mcreator.mmoservermod.init.MmoservermodModEntities;
 import net.mcreator.mmoservermod.init.MmoservermodModBlocks;
 
 import java.util.function.Supplier;
@@ -48,6 +49,7 @@ public class MmoservermodMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		MmoservermodModBlocks.REGISTRY.register(bus);
 		MmoservermodModItems.REGISTRY.register(bus);
+		MmoservermodModEntities.REGISTRY.register(bus);
 
 		MmoservermodModFeatures.REGISTRY.register(bus);
 
