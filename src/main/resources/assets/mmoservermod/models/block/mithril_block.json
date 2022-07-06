@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "mmoservermod:blocks/mithril_ore_block",
-    "particle": "mmoservermod:blocks/mithril_ore_block"
+    "all": "mmoservermod:blocks/mithril_block",
+    "particle": "mmoservermod:blocks/mithril_block"
   }
 }

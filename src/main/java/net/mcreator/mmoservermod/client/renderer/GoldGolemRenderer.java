@@ -19,6 +19,6 @@ public class GoldGolemRenderer extends HumanoidMobRenderer<GoldGolemEntity, Huma
 
 	@Override
 	public ResourceLocation getTextureLocation(GoldGolemEntity entity) {
-		return new ResourceLocation("mmoservermod:textures/test.png");
+		return new ResourceLocation("mmoservermod:textures/bdf9df6bebc7aae9.png");
 	}
 }

@@ -946,6 +946,60 @@
         ]
       },
       "path": "~/procedures"
+    },
+    {
+      "name": "BlockPlaced",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_placed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "GoldGolemRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_golem_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mobs"
     }
   ],
   "variable_elements": [
@@ -1028,8 +1082,8 @@
       "advancements.next_level.descr": "New and uniqe blocks and items",
       "item.mmoservermod.adamantine_sword": "Adamantine Sword",
       "item.mmoservermod.orichalcum_pickaxe": "Orichalcum Pickaxe",
-      "item.mmoservermod.mithril_pickaxe": "Mithril Pickaxe",
       "item.mmoservermod.mithril_armor_leggings": "Mithril Leggings",
+      "item.mmoservermod.mithril_pickaxe": "Mithril Pickaxe",
       "block.mmoservermod.deepslate_lonsdaleite_ore": "Deepslate Lonsdaleite Ore",
       "item.mmoservermod.adamantine_shovel": "Adamantine Shovel",
       "item.mmoservermod.lonsdaleite_armor_chestplate": "Lonsdaleite Chestplate",
@@ -1037,12 +1091,12 @@
       "advancements.craft_mithril_hoe.title": "Flaunting Wealth",
       "advancements.obtain_mithril_ingot.descr": "Obtain a mithril ingot",
       "item.mmoservermod.lonsdaleite_axe": "Lonsdaleite Axe",
-      "item.mmoservermod.mithril_ingot": "Mithril Ingot",
       "item.mmoservermod.lonsdaleite_armor_boots": "Lonsdaleite Boots",
+      "item.mmoservermod.mithril_ingot": "Mithril Ingot",
       "item.mmoservermod.orichalcum_ingot": "Orichalcum Ingot",
-      "item.mmoservermod.adamantine_ingot": "Adamantine Ingot",
-      "item.mmoservermod.mithril_shovel": "Mithril Shovel",
       "item.mmoservermod.lonsdaleite_shovel": "Lonsdaleite Shovel",
+      "item.mmoservermod.mithril_shovel": "Mithril Shovel",
+      "item.mmoservermod.adamantine_ingot": "Adamantine Ingot",
       "item.mmoservermod.adamantine_axe": "Adamantine Axe",
       "advancements.obtain_mithril_ingot.title": "What\u0027s this?",
       "block.mmoservermod.mithril_block": "Block of Mithril",

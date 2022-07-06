@@ -11,12 +11,19 @@ import net.minecraft.world.entity.monster.Spider;
 import net.minecraft.world.entity.monster.Skeleton;
 import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.monster.CaveSpider;
+import net.minecraft.world.entity.monster.Zombie;
+import net.minecraft.world.entity.monster.ZombieVillager;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.Entity;
 
 import javax.annotation.Nullable;
 import net.minecraft.world.entity.Mob;
+
+import net.mcreator.mmoservermod.entity.GoldGolemEntity;
+import net.minecraft.world.entity.animal.IronGolem;
+import net.minecraft.world.entity.monster.Drowned;
+import net.minecraft.world.entity.monster.Husk;
 
 @Mod.EventBusSubscriber
 public class EntitySpawnProcedure {
@@ -37,11 +44,15 @@ public class EntitySpawnProcedure {
 		}
 		if (entity instanceof Skeleton || entity instanceof WitherSkeleton) {
 			((Mob) entity).targetSelector.addGoal(3, new NearestAttackableTargetGoal<>((Mob) entity, AbstractVillager.class, true));
+			((Mob) entity).targetSelector.addGoal(3, new NearestAttackableTargetGoal<>((Mob) entity, GoldGolemEntity.class, true));
 		}
 		if (entity instanceof Spider || entity instanceof CaveSpider) {
 			((Mob) entity).targetSelector.addGoal(3, new SpiderTargetGoal<>((Spider) entity, AbstractVillager.class));
+			((Mob) entity).targetSelector.addGoal(3, new SpiderTargetGoal<>((Spider) entity, GoldGolemEntity.class));
 		}
-
+		if (entity instanceof Zombie || entity instanceof ZombieVillager || entity instanceof Drowned || entity instanceof Husk) {
+			((Mob) entity).targetSelector.addGoal(3, new NearestAttackableTargetGoal<>((Mob) entity, GoldGolemEntity.class, true));
+		}
 	}
 
 	static class SpiderTargetGoal<T extends LivingEntity> extends NearestAttackableTargetGoal<T> {
