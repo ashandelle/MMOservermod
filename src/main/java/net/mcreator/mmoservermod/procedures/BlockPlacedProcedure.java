@@ -40,11 +40,11 @@ public class BlockPlacedProcedure {
 				&& (world.getBlockState(new BlockPos(x, y - 2, z))).getBlock() == Blocks.STONE) {
 			if ((world.getBlockState(new BlockPos(x + 1, y - 1, z))).getBlock() == Blocks.STONE
 					&& (world.getBlockState(new BlockPos(x - 1, y - 1, z))).getBlock() == Blocks.STONE) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x + 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x - 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				world.destroyBlock(new BlockPos(x, y, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x, y - 2, z), false);
+				world.destroyBlock(new BlockPos(x + 1, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x - 1, y - 1, z), false);
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new StoneGolemEntity(MmoservermodModEntities.STONE_GOLEM.get(), _level);
 					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
@@ -55,11 +55,11 @@ public class BlockPlacedProcedure {
 				}
 			} else if ((world.getBlockState(new BlockPos(x, y - 1, z + 1))).getBlock() == Blocks.STONE
 					&& (world.getBlockState(new BlockPos(x, y - 1, z - 1))).getBlock() == Blocks.STONE) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z + 1), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z - 1), Blocks.AIR.defaultBlockState(), 3);
+				world.destroyBlock(new BlockPos(x, y, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x, y - 2, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z + 1), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z - 1), false);
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new StoneGolemEntity(MmoservermodModEntities.STONE_GOLEM.get(), _level);
 					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
@@ -75,11 +75,11 @@ public class BlockPlacedProcedure {
 				&& (world.getBlockState(new BlockPos(x, y - 2, z))).getBlock() == Blocks.GOLD_BLOCK) {
 			if ((world.getBlockState(new BlockPos(x + 1, y - 1, z))).getBlock() == Blocks.GOLD_BLOCK
 					&& (world.getBlockState(new BlockPos(x - 1, y - 1, z))).getBlock() == Blocks.GOLD_BLOCK) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x + 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x - 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				world.destroyBlock(new BlockPos(x, y, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x, y - 2, z), false);
+				world.destroyBlock(new BlockPos(x + 1, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x - 1, y - 1, z), false);
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new GoldGolemEntity(MmoservermodModEntities.GOLD_GOLEM.get(), _level);
 					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
@@ -90,11 +90,11 @@ public class BlockPlacedProcedure {
 				}
 			} else if ((world.getBlockState(new BlockPos(x, y - 1, z + 1))).getBlock() == Blocks.GOLD_BLOCK
 					&& (world.getBlockState(new BlockPos(x, y - 1, z - 1))).getBlock() == Blocks.GOLD_BLOCK) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z + 1), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z - 1), Blocks.AIR.defaultBlockState(), 3);
+				world.destroyBlock(new BlockPos(x, y, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x, y - 2, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z + 1), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z - 1), false);
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new GoldGolemEntity(MmoservermodModEntities.GOLD_GOLEM.get(), _level);
 					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
@@ -110,11 +110,11 @@ public class BlockPlacedProcedure {
 				&& (world.getBlockState(new BlockPos(x, y - 2, z))).getBlock() == Blocks.EMERALD_BLOCK) {
 			if ((world.getBlockState(new BlockPos(x + 1, y - 1, z))).getBlock() == Blocks.EMERALD_BLOCK
 					&& (world.getBlockState(new BlockPos(x - 1, y - 1, z))).getBlock() == Blocks.EMERALD_BLOCK) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x + 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x - 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				world.destroyBlock(new BlockPos(x, y, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x, y - 2, z), false);
+				world.destroyBlock(new BlockPos(x + 1, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x - 1, y - 1, z), false);
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new EmeraldGolemEntity(MmoservermodModEntities.EMERALD_GOLEM.get(), _level);
 					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
@@ -125,11 +125,11 @@ public class BlockPlacedProcedure {
 				}
 			} else if ((world.getBlockState(new BlockPos(x, y - 1, z + 1))).getBlock() == Blocks.EMERALD_BLOCK
 					&& (world.getBlockState(new BlockPos(x, y - 1, z - 1))).getBlock() == Blocks.EMERALD_BLOCK) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z + 1), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z - 1), Blocks.AIR.defaultBlockState(), 3);
+				world.destroyBlock(new BlockPos(x, y, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x, y - 2, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z + 1), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z - 1), false);
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new EmeraldGolemEntity(MmoservermodModEntities.EMERALD_GOLEM.get(), _level);
 					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
@@ -145,11 +145,11 @@ public class BlockPlacedProcedure {
 				&& (world.getBlockState(new BlockPos(x, y - 2, z))).getBlock() == Blocks.DIAMOND_BLOCK) {
 			if ((world.getBlockState(new BlockPos(x + 1, y - 1, z))).getBlock() == Blocks.DIAMOND_BLOCK
 					&& (world.getBlockState(new BlockPos(x - 1, y - 1, z))).getBlock() == Blocks.DIAMOND_BLOCK) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x + 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x - 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				world.destroyBlock(new BlockPos(x, y, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x, y - 2, z), false);
+				world.destroyBlock(new BlockPos(x + 1, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x - 1, y - 1, z), false);
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new DiamondGolemEntity(MmoservermodModEntities.DIAMOND_GOLEM.get(), _level);
 					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
@@ -160,11 +160,11 @@ public class BlockPlacedProcedure {
 				}
 			} else if ((world.getBlockState(new BlockPos(x, y - 1, z + 1))).getBlock() == Blocks.DIAMOND_BLOCK
 					&& (world.getBlockState(new BlockPos(x, y - 1, z - 1))).getBlock() == Blocks.DIAMOND_BLOCK) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z + 1), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z - 1), Blocks.AIR.defaultBlockState(), 3);
+				world.destroyBlock(new BlockPos(x, y, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x, y - 2, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z + 1), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z - 1), false);
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new DiamondGolemEntity(MmoservermodModEntities.DIAMOND_GOLEM.get(), _level);
 					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
@@ -180,11 +180,11 @@ public class BlockPlacedProcedure {
 				&& (world.getBlockState(new BlockPos(x, y - 2, z))).getBlock() == Blocks.NETHERITE_BLOCK) {
 			if ((world.getBlockState(new BlockPos(x + 1, y - 1, z))).getBlock() == Blocks.NETHERITE_BLOCK
 					&& (world.getBlockState(new BlockPos(x - 1, y - 1, z))).getBlock() == Blocks.NETHERITE_BLOCK) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x + 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x - 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				world.destroyBlock(new BlockPos(x, y, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x, y - 2, z), false);
+				world.destroyBlock(new BlockPos(x + 1, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x - 1, y - 1, z), false);
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new NetheriteGolemEntity(MmoservermodModEntities.NETHERITE_GOLEM.get(), _level);
 					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
@@ -195,11 +195,11 @@ public class BlockPlacedProcedure {
 				}
 			} else if ((world.getBlockState(new BlockPos(x, y - 1, z + 1))).getBlock() == Blocks.NETHERITE_BLOCK
 					&& (world.getBlockState(new BlockPos(x, y - 1, z - 1))).getBlock() == Blocks.NETHERITE_BLOCK) {
-				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z + 1), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y - 1, z - 1), Blocks.AIR.defaultBlockState(), 3);
+				world.destroyBlock(new BlockPos(x, y, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z), false);
+				world.destroyBlock(new BlockPos(x, y - 2, z), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z + 1), false);
+				world.destroyBlock(new BlockPos(x, y - 1, z - 1), false);
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new NetheriteGolemEntity(MmoservermodModEntities.NETHERITE_GOLEM.get(), _level);
 					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
