@@ -10,8 +10,10 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.mmoservermod.client.renderer.StoneGolemRenderer;
+import net.mcreator.mmoservermod.client.renderer.NetheriteGolemRenderer;
 import net.mcreator.mmoservermod.client.renderer.GoldGolemRenderer;
 import net.mcreator.mmoservermod.client.renderer.EmeraldGolemRenderer;
+import net.mcreator.mmoservermod.client.renderer.DiamondGolemRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class MmoservermodModEntityRenderers {
@@ -20,5 +22,7 @@ public class MmoservermodModEntityRenderers {
 		event.registerEntityRenderer(MmoservermodModEntities.GOLD_GOLEM.get(), GoldGolemRenderer::new);
 		event.registerEntityRenderer(MmoservermodModEntities.STONE_GOLEM.get(), StoneGolemRenderer::new);
 		event.registerEntityRenderer(MmoservermodModEntities.EMERALD_GOLEM.get(), EmeraldGolemRenderer::new);
+		event.registerEntityRenderer(MmoservermodModEntities.DIAMOND_GOLEM.get(), DiamondGolemRenderer::new);
+		event.registerEntityRenderer(MmoservermodModEntities.NETHERITE_GOLEM.get(), NetheriteGolemRenderer::new);
 	}
 }

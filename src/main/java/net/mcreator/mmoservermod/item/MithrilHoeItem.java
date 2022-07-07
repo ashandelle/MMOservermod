@@ -36,6 +36,6 @@ public class MithrilHoeItem extends HoeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(MmoservermodModItems.MITHRIL_INGOT.get()));
 			}
-		}, 0, 1f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+		}, 0, 1f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).fireResistant());
 	}
 }

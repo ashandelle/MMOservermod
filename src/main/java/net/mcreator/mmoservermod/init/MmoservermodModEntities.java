@@ -17,8 +17,10 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.mmoservermod.entity.StoneGolemEntity;
+import net.mcreator.mmoservermod.entity.NetheriteGolemEntity;
 import net.mcreator.mmoservermod.entity.GoldGolemEntity;
 import net.mcreator.mmoservermod.entity.EmeraldGolemEntity;
+import net.mcreator.mmoservermod.entity.DiamondGolemEntity;
 import net.mcreator.mmoservermod.MmoservermodMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -39,6 +41,14 @@ public class MmoservermodModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EmeraldGolemEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DiamondGolemEntity>> DIAMOND_GOLEM = register("diamond_golem",
+			EntityType.Builder.<DiamondGolemEntity>of(DiamondGolemEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DiamondGolemEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<NetheriteGolemEntity>> NETHERITE_GOLEM = register("netherite_golem",
+			EntityType.Builder.<NetheriteGolemEntity>of(NetheriteGolemEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NetheriteGolemEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -50,6 +60,8 @@ public class MmoservermodModEntities {
 			GoldGolemEntity.init();
 			StoneGolemEntity.init();
 			EmeraldGolemEntity.init();
+			DiamondGolemEntity.init();
+			NetheriteGolemEntity.init();
 		});
 	}
 
@@ -58,5 +70,7 @@ public class MmoservermodModEntities {
 		event.put(GOLD_GOLEM.get(), GoldGolemEntity.createAttributes().build());
 		event.put(STONE_GOLEM.get(), StoneGolemEntity.createAttributes().build());
 		event.put(EMERALD_GOLEM.get(), EmeraldGolemEntity.createAttributes().build());
+		event.put(DIAMOND_GOLEM.get(), DiamondGolemEntity.createAttributes().build());
+		event.put(NETHERITE_GOLEM.get(), NetheriteGolemEntity.createAttributes().build());
 	}
 }

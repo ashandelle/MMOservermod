@@ -16,8 +16,10 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.mmoservermod.init.MmoservermodModEntities;
 import net.mcreator.mmoservermod.entity.StoneGolemEntity;
+import net.mcreator.mmoservermod.entity.NetheriteGolemEntity;
 import net.mcreator.mmoservermod.entity.GoldGolemEntity;
 import net.mcreator.mmoservermod.entity.EmeraldGolemEntity;
+import net.mcreator.mmoservermod.entity.DiamondGolemEntity;
 
 import javax.annotation.Nullable;
 
@@ -130,6 +132,76 @@ public class BlockPlacedProcedure {
 				world.setBlock(new BlockPos(x, y - 1, z - 1), Blocks.AIR.defaultBlockState(), 3);
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new EmeraldGolemEntity(MmoservermodModEntities.EMERALD_GOLEM.get(), _level);
+					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
+					if (entityToSpawn instanceof Mob _mobToSpawn)
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
+								null, null);
+					world.addFreshEntity(entityToSpawn);
+				}
+			}
+		}
+		if ((blockstate.getBlock() == Blocks.CARVED_PUMPKIN || blockstate.getBlock() == Blocks.JACK_O_LANTERN)
+				&& (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.DIAMOND_BLOCK
+				&& (world.getBlockState(new BlockPos(x, y - 2, z))).getBlock() == Blocks.DIAMOND_BLOCK) {
+			if ((world.getBlockState(new BlockPos(x + 1, y - 1, z))).getBlock() == Blocks.DIAMOND_BLOCK
+					&& (world.getBlockState(new BlockPos(x - 1, y - 1, z))).getBlock() == Blocks.DIAMOND_BLOCK) {
+				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x + 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x - 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = new DiamondGolemEntity(MmoservermodModEntities.DIAMOND_GOLEM.get(), _level);
+					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
+					if (entityToSpawn instanceof Mob _mobToSpawn)
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
+								null, null);
+					world.addFreshEntity(entityToSpawn);
+				}
+			} else if ((world.getBlockState(new BlockPos(x, y - 1, z + 1))).getBlock() == Blocks.DIAMOND_BLOCK
+					&& (world.getBlockState(new BlockPos(x, y - 1, z - 1))).getBlock() == Blocks.DIAMOND_BLOCK) {
+				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y - 1, z + 1), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y - 1, z - 1), Blocks.AIR.defaultBlockState(), 3);
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = new DiamondGolemEntity(MmoservermodModEntities.DIAMOND_GOLEM.get(), _level);
+					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
+					if (entityToSpawn instanceof Mob _mobToSpawn)
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
+								null, null);
+					world.addFreshEntity(entityToSpawn);
+				}
+			}
+		}
+		if ((blockstate.getBlock() == Blocks.CARVED_PUMPKIN || blockstate.getBlock() == Blocks.JACK_O_LANTERN)
+				&& (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.NETHERITE_BLOCK
+				&& (world.getBlockState(new BlockPos(x, y - 2, z))).getBlock() == Blocks.NETHERITE_BLOCK) {
+			if ((world.getBlockState(new BlockPos(x + 1, y - 1, z))).getBlock() == Blocks.NETHERITE_BLOCK
+					&& (world.getBlockState(new BlockPos(x - 1, y - 1, z))).getBlock() == Blocks.NETHERITE_BLOCK) {
+				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x + 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x - 1, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = new NetheriteGolemEntity(MmoservermodModEntities.NETHERITE_GOLEM.get(), _level);
+					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
+					if (entityToSpawn instanceof Mob _mobToSpawn)
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
+								null, null);
+					world.addFreshEntity(entityToSpawn);
+				}
+			} else if ((world.getBlockState(new BlockPos(x, y - 1, z + 1))).getBlock() == Blocks.NETHERITE_BLOCK
+					&& (world.getBlockState(new BlockPos(x, y - 1, z - 1))).getBlock() == Blocks.NETHERITE_BLOCK) {
+				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y - 2, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y - 1, z + 1), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y - 1, z - 1), Blocks.AIR.defaultBlockState(), 3);
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = new NetheriteGolemEntity(MmoservermodModEntities.NETHERITE_GOLEM.get(), _level);
 					entityToSpawn.moveTo((x + 0.5), (y - 2), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof Mob _mobToSpawn)
 						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,

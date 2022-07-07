@@ -1111,6 +1111,66 @@
       "locked_code": false,
       "registry_name": "emerald_golem",
       "path": "~/mobs"
+    },
+    {
+      "name": "DiamondGolem",
+      "type": "livingentity",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_golem",
+      "path": "~/mobs"
+    },
+    {
+      "name": "DiamondGolemRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_golem_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "NetheriteGolem",
+      "type": "livingentity",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_golem",
+      "path": "~/mobs"
+    },
+    {
+      "name": "NetheriteGolemRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_golem_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mobs"
     }
   ],
   "variable_elements": [
@@ -1184,6 +1244,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.mmoservermod.diamond_golem_spawn_egg": "Diamond Golem Spawn Egg",
       "item.mmoservermod.skillbook": "Skillbook",
       "item.mmoservermod.lonsdaleite_armor_leggings": "Lonsdaleite Leggings",
       "entity.mmoservermod.stone_golem": "Stone Golem",
@@ -1194,8 +1255,8 @@
       "advancements.next_level.descr": "New and uniqe blocks and items",
       "item.mmoservermod.adamantine_sword": "Adamantine Sword",
       "item.mmoservermod.orichalcum_pickaxe": "Orichalcum Pickaxe",
-      "item.mmoservermod.mithril_armor_leggings": "Mithril Leggings",
       "item.mmoservermod.mithril_pickaxe": "Mithril Pickaxe",
+      "item.mmoservermod.mithril_armor_leggings": "Mithril Leggings",
       "block.mmoservermod.deepslate_lonsdaleite_ore": "Deepslate Lonsdaleite Ore",
       "item.mmoservermod.adamantine_shovel": "Adamantine Shovel",
       "item.mmoservermod.lonsdaleite_armor_chestplate": "Lonsdaleite Chestplate",
@@ -1204,8 +1265,8 @@
       "advancements.craft_mithril_hoe.title": "Flaunting Wealth",
       "advancements.obtain_mithril_ingot.descr": "Obtain a mithril ingot",
       "item.mmoservermod.lonsdaleite_axe": "Lonsdaleite Axe",
-      "item.mmoservermod.lonsdaleite_armor_boots": "Lonsdaleite Boots",
       "item.mmoservermod.mithril_ingot": "Mithril Ingot",
+      "item.mmoservermod.lonsdaleite_armor_boots": "Lonsdaleite Boots",
       "item.mmoservermod.orichalcum_ingot": "Orichalcum Ingot",
       "item.mmoservermod.adamantine_ingot": "Adamantine Ingot",
       "item.mmoservermod.mithril_shovel": "Mithril Shovel",
@@ -1216,11 +1277,13 @@
       "advancements.next_level.title": "The Next Level",
       "item.mmoservermod.gold_golem_spawn_egg": "Gold Golem Spawn Egg",
       "item.mmoservermod.orichalcum_armor_boots": "Orichalcum Boots",
+      "entity.mmoservermod.diamond_golem": "Diamond Golem",
       "advancements.craft_mithril_pickaxe.title": "Magic Pickaxe",
       "item.mmoservermod.emerald_golem_spawn_egg": "Emerald Golem Spawn Egg",
       "item.mmoservermod.lonsdaleite_sword": "Lonsdaleite Sword",
       "item.mmoservermod.orichalcum_armor_chestplate": "Orichalcum Chestplate",
       "item.mmoservermod.lonsdaleite_pickaxe": "Lonsdaleite Pickaxe",
+      "item.mmoservermod.netherite_golem_spawn_egg": "Netherite Golem Spawn Egg",
       "item.mmoservermod.orichalcum_hoe": "Orichalcum Hoe",
       "item.mmoservermod.mithril_axe": "Mithril Axe",
       "block.mmoservermod.orichalcum_block": "Block of Orichalcum",
@@ -1248,6 +1311,7 @@
       "item.mmoservermod.raw_mithril": "Raw Mithril",
       "item.mmoservermod.adamantine_armor_chestplate": "Adamantine Chestplate",
       "item.mmoservermod.adamantine_armor_boots": "Adamantine Boots",
+      "entity.mmoservermod.netherite_golem": "Netherite Golem",
       "item.mmoservermod.lonsdaleite_armor_helmet": "Lonsdaleite Helmet",
       "item.mmoservermod.mithril_armor_boots": "Mithril Boots",
       "item.mmoservermod.mithril_armor_helmet": "Mithril Helmet",
