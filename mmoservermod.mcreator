@@ -1000,6 +1000,117 @@
         ]
       },
       "path": "~/mobs"
+    },
+    {
+      "name": "DiamondGolemLoot",
+      "type": "loottable",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_golem_loot",
+      "path": "~/loot"
+    },
+    {
+      "name": "EmeraldGolemLoot",
+      "type": "loottable",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_golem_loot",
+      "path": "~/loot"
+    },
+    {
+      "name": "StoneGolemLoot",
+      "type": "loottable",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_golem_loot",
+      "path": "~/loot"
+    },
+    {
+      "name": "NetheriteGolemLoot",
+      "type": "loottable",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_golem_loot",
+      "path": "~/loot"
+    },
+    {
+      "name": "MithrilGolemLoot",
+      "type": "loottable",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mithril_golem_loot",
+      "path": "~/loot"
+    },
+    {
+      "name": "LonsdaleiteGolemLoot",
+      "type": "loottable",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lonsdaleite_golem_loot",
+      "path": "~/loot"
+    },
+    {
+      "name": "OrichalcumGolemLoot",
+      "type": "loottable",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orichalcum_golem_loot",
+      "path": "~/loot"
+    },
+    {
+      "name": "AdamantineGolemLoot",
+      "type": "loottable",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adamantine_golem_loot",
+      "path": "~/loot"
+    },
+    {
+      "name": "StoneGolem",
+      "type": "livingentity",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_golem",
+      "path": "~/mobs"
+    },
+    {
+      "name": "EmeraldGolemRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_golem_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/mobs"
+    },
+    {
+      "name": "EmeraldGolem",
+      "type": "livingentity",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_golem",
+      "path": "~/mobs"
     }
   ],
   "variable_elements": [
@@ -1075,6 +1186,7 @@
     "en_us": {
       "item.mmoservermod.skillbook": "Skillbook",
       "item.mmoservermod.lonsdaleite_armor_leggings": "Lonsdaleite Leggings",
+      "entity.mmoservermod.stone_golem": "Stone Golem",
       "item.mmoservermod.adamantine_pickaxe": "Adamantine Pickaxe",
       "item.mmoservermod.orichalcum_shovel": "Orichalcum Shovel",
       "block.mmoservermod.raw_adamantine_block": "Block of Raw Adamantine",
@@ -1082,21 +1194,22 @@
       "advancements.next_level.descr": "New and uniqe blocks and items",
       "item.mmoservermod.adamantine_sword": "Adamantine Sword",
       "item.mmoservermod.orichalcum_pickaxe": "Orichalcum Pickaxe",
-      "item.mmoservermod.mithril_armor_leggings": "Mithril Leggings",
       "item.mmoservermod.mithril_pickaxe": "Mithril Pickaxe",
+      "item.mmoservermod.mithril_armor_leggings": "Mithril Leggings",
       "block.mmoservermod.deepslate_lonsdaleite_ore": "Deepslate Lonsdaleite Ore",
       "item.mmoservermod.adamantine_shovel": "Adamantine Shovel",
       "item.mmoservermod.lonsdaleite_armor_chestplate": "Lonsdaleite Chestplate",
+      "entity.mmoservermod.emerald_golem": "Emerald Golem",
       "item.mmoservermod.mithril_hoe": "Mithril Hoe",
       "advancements.craft_mithril_hoe.title": "Flaunting Wealth",
       "advancements.obtain_mithril_ingot.descr": "Obtain a mithril ingot",
       "item.mmoservermod.lonsdaleite_axe": "Lonsdaleite Axe",
-      "item.mmoservermod.lonsdaleite_armor_boots": "Lonsdaleite Boots",
       "item.mmoservermod.mithril_ingot": "Mithril Ingot",
+      "item.mmoservermod.lonsdaleite_armor_boots": "Lonsdaleite Boots",
       "item.mmoservermod.orichalcum_ingot": "Orichalcum Ingot",
-      "item.mmoservermod.lonsdaleite_shovel": "Lonsdaleite Shovel",
-      "item.mmoservermod.mithril_shovel": "Mithril Shovel",
       "item.mmoservermod.adamantine_ingot": "Adamantine Ingot",
+      "item.mmoservermod.mithril_shovel": "Mithril Shovel",
+      "item.mmoservermod.lonsdaleite_shovel": "Lonsdaleite Shovel",
       "item.mmoservermod.adamantine_axe": "Adamantine Axe",
       "advancements.obtain_mithril_ingot.title": "What\u0027s this?",
       "block.mmoservermod.mithril_block": "Block of Mithril",
@@ -1104,6 +1217,7 @@
       "item.mmoservermod.gold_golem_spawn_egg": "Gold Golem Spawn Egg",
       "item.mmoservermod.orichalcum_armor_boots": "Orichalcum Boots",
       "advancements.craft_mithril_pickaxe.title": "Magic Pickaxe",
+      "item.mmoservermod.emerald_golem_spawn_egg": "Emerald Golem Spawn Egg",
       "item.mmoservermod.lonsdaleite_sword": "Lonsdaleite Sword",
       "item.mmoservermod.orichalcum_armor_chestplate": "Orichalcum Chestplate",
       "item.mmoservermod.lonsdaleite_pickaxe": "Lonsdaleite Pickaxe",
@@ -1124,6 +1238,7 @@
       "item.mmoservermod.mithril_sword": "Mithril Sword",
       "item.mmoservermod.orichalcum_armor_leggings": "Orichalcum Leggings",
       "item.mmoservermod.adamantine_armor_helmet": "Adamantine Helmet",
+      "item.mmoservermod.stone_golem_spawn_egg": "Stone Golem Spawn Egg",
       "item.mmoservermod.orichalcum_axe": "Orichalcum Axe",
       "item.mmoservermod.lonsdaleite_hoe": "Lonsdaleite Hoe",
       "block.mmoservermod.raw_mithril_block": "Block of Raw Mithril",

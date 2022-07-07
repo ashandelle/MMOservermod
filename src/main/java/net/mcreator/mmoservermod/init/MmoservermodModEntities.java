@@ -16,7 +16,9 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.mmoservermod.entity.StoneGolemEntity;
 import net.mcreator.mmoservermod.entity.GoldGolemEntity;
+import net.mcreator.mmoservermod.entity.EmeraldGolemEntity;
 import net.mcreator.mmoservermod.MmoservermodMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -25,6 +27,16 @@ public class MmoservermodModEntities {
 	public static final RegistryObject<EntityType<GoldGolemEntity>> GOLD_GOLEM = register("gold_golem",
 			EntityType.Builder.<GoldGolemEntity>of(GoldGolemEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GoldGolemEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<StoneGolemEntity>> STONE_GOLEM = register("stone_golem",
+			EntityType.Builder.<StoneGolemEntity>of(StoneGolemEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StoneGolemEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<EmeraldGolemEntity>> EMERALD_GOLEM = register("emerald_golem",
+			EntityType.Builder.<EmeraldGolemEntity>of(EmeraldGolemEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EmeraldGolemEntity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -36,11 +48,15 @@ public class MmoservermodModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			GoldGolemEntity.init();
+			StoneGolemEntity.init();
+			EmeraldGolemEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(GOLD_GOLEM.get(), GoldGolemEntity.createAttributes().build());
+		event.put(STONE_GOLEM.get(), StoneGolemEntity.createAttributes().build());
+		event.put(EMERALD_GOLEM.get(), EmeraldGolemEntity.createAttributes().build());
 	}
 }
