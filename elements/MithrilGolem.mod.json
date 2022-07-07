@@ -2,7 +2,7 @@
   "_fv": 28,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Diamond Golem",
+    "mobName": "Mithril Golem",
     "mobLabel": "",
     "mobModelName": "Biped",
     "mobModelTexture": "bdf9df6bebc7aae9.png",
@@ -23,8 +23,8 @@
     "creativeTab": {
       "value": "MISC"
     },
-    "isBoss": false,
-    "bossBarColor": "PINK",
+    "isBoss": true,
+    "bossBarColor": "BLUE",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
       "value": ""
@@ -46,13 +46,13 @@
     },
     "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 20,
-    "attackKnockback": 1.0,
-    "knockbackResistance": 0.9,
-    "movementSpeed": 0.3,
+    "attackStrength": 30,
+    "attackKnockback": 1.5,
+    "knockbackResistance": 1.0,
+    "movementSpeed": 0.35,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "health": 200,
+    "health": 300,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
@@ -63,7 +63,7 @@
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "immuneToArrows": false,
     "immuneToFallDamage": true,
     "immuneToCactus": false,
@@ -71,9 +71,9 @@
     "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
-    "immuneToExplosion": false,
+    "immuneToExplosion": true,
     "immuneToTrident": false,
-    "immuneToAnvil": false,
+    "immuneToAnvil": true,
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
@@ -99,7 +99,7 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "onRightClickedOn": {
-      "name": "DiamondGolemRightClickedOnEntity"
+      "name": "MithrilGolemRightClickedOnEntity"
     },
     "hasAI": true,
     "aiBase": "(none)",

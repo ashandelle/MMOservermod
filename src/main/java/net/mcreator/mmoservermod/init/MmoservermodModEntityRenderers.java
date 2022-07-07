@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.mmoservermod.client.renderer.StoneGolemRenderer;
 import net.mcreator.mmoservermod.client.renderer.NetheriteGolemRenderer;
+import net.mcreator.mmoservermod.client.renderer.MithrilGolemRenderer;
 import net.mcreator.mmoservermod.client.renderer.GoldGolemRenderer;
 import net.mcreator.mmoservermod.client.renderer.EmeraldGolemRenderer;
 import net.mcreator.mmoservermod.client.renderer.DiamondGolemRenderer;
@@ -24,5 +25,6 @@ public class MmoservermodModEntityRenderers {
 		event.registerEntityRenderer(MmoservermodModEntities.EMERALD_GOLEM.get(), EmeraldGolemRenderer::new);
 		event.registerEntityRenderer(MmoservermodModEntities.DIAMOND_GOLEM.get(), DiamondGolemRenderer::new);
 		event.registerEntityRenderer(MmoservermodModEntities.NETHERITE_GOLEM.get(), NetheriteGolemRenderer::new);
+		event.registerEntityRenderer(MmoservermodModEntities.MITHRIL_GOLEM.get(), MithrilGolemRenderer::new);
 	}
 }

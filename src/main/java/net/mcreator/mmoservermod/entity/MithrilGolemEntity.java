@@ -26,19 +26,24 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mmoservermod.procedures.DiamondGolemRightClickedOnEntityProcedure;
+import net.mcreator.mmoservermod.procedures.MithrilGolemRightClickedOnEntityProcedure;
 import net.mcreator.mmoservermod.init.MmoservermodModEntities;
 
-public class DiamondGolemEntity extends PathfinderMob {
-	public DiamondGolemEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(MmoservermodModEntities.DIAMOND_GOLEM.get(), world);
+public class MithrilGolemEntity extends PathfinderMob {
+	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.BLUE,
+			ServerBossEvent.BossBarOverlay.PROGRESS);
+
+	public MithrilGolemEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(MmoservermodModEntities.MITHRIL_GOLEM.get(), world);
 	}
 
-	public DiamondGolemEntity(EntityType<DiamondGolemEntity> type, Level world) {
+	public MithrilGolemEntity(EntityType<MithrilGolemEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
@@ -96,6 +101,10 @@ public class DiamondGolemEntity extends PathfinderMob {
 			return false;
 		if (source == DamageSource.DROWN)
 			return false;
+		if (source.isExplosion())
+			return false;
+		if (source == DamageSource.ANVIL)
+			return false;
 		return super.hurt(source, amount);
 	}
 
@@ -110,8 +119,31 @@ public class DiamondGolemEntity extends PathfinderMob {
 		Entity entity = this;
 		Level world = this.level;
 
-		DiamondGolemRightClickedOnEntityProcedure.execute(entity, sourceentity);
+		MithrilGolemRightClickedOnEntityProcedure.execute(entity, sourceentity);
 		return retval;
+	}
+
+	@Override
+	public boolean canChangeDimensions() {
+		return false;
+	}
+
+	@Override
+	public void startSeenByPlayer(ServerPlayer player) {
+		super.startSeenByPlayer(player);
+		this.bossInfo.addPlayer(player);
+	}
+
+	@Override
+	public void stopSeenByPlayer(ServerPlayer player) {
+		super.stopSeenByPlayer(player);
+		this.bossInfo.removePlayer(player);
+	}
+
+	@Override
+	public void customServerAiStep() {
+		super.customServerAiStep();
+		this.bossInfo.setProgress(this.getHealth() / this.getMaxHealth());
 	}
 
 	public static void init() {
@@ -119,12 +151,12 @@ public class DiamondGolemEntity extends PathfinderMob {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 200);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.35);
+		builder = builder.add(Attributes.MAX_HEALTH, 300);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 20);
-		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.9);
-		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 30);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 1);
+		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1.5);
 		return builder;
 	}
 }
