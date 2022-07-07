@@ -17,11 +17,14 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.mmoservermod.entity.StoneGolemEntity;
+import net.mcreator.mmoservermod.entity.OrichalcumGolemEntity;
 import net.mcreator.mmoservermod.entity.NetheriteGolemEntity;
 import net.mcreator.mmoservermod.entity.MithrilGolemEntity;
+import net.mcreator.mmoservermod.entity.LonsdaleiteGolemEntity;
 import net.mcreator.mmoservermod.entity.GoldGolemEntity;
 import net.mcreator.mmoservermod.entity.EmeraldGolemEntity;
 import net.mcreator.mmoservermod.entity.DiamondGolemEntity;
+import net.mcreator.mmoservermod.entity.AdamantineGolemEntity;
 import net.mcreator.mmoservermod.MmoservermodMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -53,6 +56,15 @@ public class MmoservermodModEntities {
 	public static final RegistryObject<EntityType<MithrilGolemEntity>> MITHRIL_GOLEM = register("mithril_golem",
 			EntityType.Builder.<MithrilGolemEntity>of(MithrilGolemEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MithrilGolemEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<LonsdaleiteGolemEntity>> LONSDALEITE_GOLEM = register("lonsdaleite_golem",
+			EntityType.Builder.<LonsdaleiteGolemEntity>of(LonsdaleiteGolemEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LonsdaleiteGolemEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<OrichalcumGolemEntity>> ORICHALCUM_GOLEM = register("orichalcum_golem",
+			EntityType.Builder.<OrichalcumGolemEntity>of(OrichalcumGolemEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(OrichalcumGolemEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<AdamantineGolemEntity>> ADAMANTINE_GOLEM = register("adamantine_golem",
+			EntityType.Builder.<AdamantineGolemEntity>of(AdamantineGolemEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AdamantineGolemEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -67,6 +79,9 @@ public class MmoservermodModEntities {
 			DiamondGolemEntity.init();
 			NetheriteGolemEntity.init();
 			MithrilGolemEntity.init();
+			LonsdaleiteGolemEntity.init();
+			OrichalcumGolemEntity.init();
+			AdamantineGolemEntity.init();
 		});
 	}
 
@@ -78,5 +93,8 @@ public class MmoservermodModEntities {
 		event.put(DIAMOND_GOLEM.get(), DiamondGolemEntity.createAttributes().build());
 		event.put(NETHERITE_GOLEM.get(), NetheriteGolemEntity.createAttributes().build());
 		event.put(MITHRIL_GOLEM.get(), MithrilGolemEntity.createAttributes().build());
+		event.put(LONSDALEITE_GOLEM.get(), LonsdaleiteGolemEntity.createAttributes().build());
+		event.put(ORICHALCUM_GOLEM.get(), OrichalcumGolemEntity.createAttributes().build());
+		event.put(ADAMANTINE_GOLEM.get(), AdamantineGolemEntity.createAttributes().build());
 	}
 }
